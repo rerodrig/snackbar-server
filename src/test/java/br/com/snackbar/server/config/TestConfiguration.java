@@ -1,4 +1,4 @@
-package br.com.snackbar.serversideapp.config;
+package br.com.snackbar.server.config;
 
 import org.springframework.context.annotation.Configuration;
 
