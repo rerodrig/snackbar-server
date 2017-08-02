@@ -10,6 +10,17 @@ public class Product {
 
 	List<Ingredient> ingredients;
 
+	public Product() {
+
+	}
+
+	public Product(final Integer id, final String name, final List<Ingredient> ingredients) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.ingredients = ingredients;
+	}
+
 	public Integer getId() {
 		return this.id;
 	}

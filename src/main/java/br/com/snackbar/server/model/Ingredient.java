@@ -7,6 +7,19 @@ public class Ingredient {
 	private Integer id;
 	private String name;
 	private BigDecimal price;
+	private DiscountType discountType;
+
+	public Ingredient() {
+
+	}
+
+	public Ingredient(final Integer id, final String name, final BigDecimal price, final DiscountType discountType) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.discountType = discountType;
+	}
 
 	public Integer getId() {
 		return this.id;
@@ -32,10 +45,19 @@ public class Ingredient {
 		this.price = price;
 	}
 
+	public DiscountType getDiscountType() {
+		return this.discountType;
+	}
+
+	public void setDiscountType(final DiscountType discountType) {
+		this.discountType = discountType;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + (this.discountType == null ? 0 : this.discountType.hashCode());
 		result = prime * result + (this.id == null ? 0 : this.id.hashCode());
 		result = prime * result + (this.name == null ? 0 : this.name.hashCode());
 		result = prime * result + (this.price == null ? 0 : this.price.hashCode());
@@ -54,6 +76,9 @@ public class Ingredient {
 			return false;
 		}
 		Ingredient other = (Ingredient) obj;
+		if (this.discountType != other.discountType) {
+			return false;
+		}
 		if (this.id == null) {
 			if (other.id != null) {
 				return false;
@@ -80,7 +105,8 @@ public class Ingredient {
 
 	@Override
 	public String toString() {
-		return "Ingredient [id=" + this.id + ", name=" + this.name + ", price=" + this.price + "]";
+		return "Ingredient [id=" + this.id + ", name=" + this.name + ", price=" + this.price + ", discountType="
+				+ this.discountType + "]";
 	}
 
 }

@@ -8,22 +8,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.snackbar.server.model.Product;
-import br.com.snackbar.server.service.ProductService;
+import br.com.snackbar.server.model.Ingredient;
+import br.com.snackbar.server.service.IngredientService;
 
 @RestController
-@RequestMapping("/products")
-public class ProductController {
+@RequestMapping("/ingredients")
+public class IngredientController {
 
 	@Autowired
-	private ProductService productService;
+	private IngredientService service;
 
 	@GetMapping
-	public ResponseEntity<List<Product>> listAll() {
+	public ResponseEntity<List<Ingredient>> listAll() {
 
-		List<Product> products = this.productService.list();
+		List<Ingredient> ingredients = this.service.list();
 
-		return ResponseEntity.ok(products);
+		return ResponseEntity.ok(ingredients);
 	}
-
 }
