@@ -16,7 +16,7 @@ public class ExtraIngredientDiscountCalculatorTest {
 	@Test
 	public void shouldDiscountOneItemInThree() {
 
-		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.GREASY);
+		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.EXTRA_INGREDIENT);
 
 		assertEquals(BigDecimal.valueOf(2.5), this.calculator.calculate(ingredient, 3));
 	}
@@ -24,7 +24,7 @@ public class ExtraIngredientDiscountCalculatorTest {
 	@Test
 	public void shouldDiscountTwoItemsInThree() {
 
-		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.GREASY);
+		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.EXTRA_INGREDIENT);
 
 		assertEquals(BigDecimal.valueOf(5.0), this.calculator.calculate(ingredient, 6));
 	}
@@ -32,7 +32,7 @@ public class ExtraIngredientDiscountCalculatorTest {
 	@Test
 	public void shouldDiscountFiveItemsInSixteen() {
 
-		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.GREASY);
+		Ingredient ingredient = new Ingredient(1, "Burger", BigDecimal.valueOf(2.5), DiscountType.EXTRA_INGREDIENT);
 
 		assertEquals(BigDecimal.valueOf(12.5), this.calculator.calculate(ingredient, 16));
 	}

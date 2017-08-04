@@ -34,7 +34,7 @@ public class ProductPriceCalculator {
 
 			if (ingredient.getDiscountType() != null) {
 				switch (ingredient.getDiscountType()) {
-				case EXTRA_IGREDIENT:
+				case EXTRA_INGREDIENT:
 					itemsDiscount = itemsDiscount.add(this.extraCalculator.calculate(ingredient, item.getQuantity()));
 					break;
 				case LIGHT:
@@ -53,11 +53,11 @@ public class ProductPriceCalculator {
 
 		}
 
+		totalPrice = totalPrice.subtract(itemsDiscount);
+
 		BigDecimal lightDiscount = this.lightCalculator.calculate(lightQty, greasyQty, totalPrice);
 
-		totalPrice = totalPrice.subtract(itemsDiscount).subtract(lightDiscount);
-
-		return totalPrice;
+		return totalPrice.subtract(lightDiscount);
 	}
 
 }

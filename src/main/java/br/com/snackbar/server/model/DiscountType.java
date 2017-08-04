@@ -2,5 +2,5 @@ package br.com.snackbar.server.model;
 
 public enum DiscountType {
 
-	LIGHT, GREASY, EXTRA_IGREDIENT;
+	LIGHT, GREASY, EXTRA_INGREDIENT;
 }
