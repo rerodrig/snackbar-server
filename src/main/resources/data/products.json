@@ -1,4 +1,4 @@
-{"id": 1, "name": "X-Bacon", "ingredients":[{"id": 2, "name": "Bacon", "price": 2.00}, {"id": 3, "name": "Hambúrguer de carne", "price": 3.00}, {"id": 5, "name": "Queijo", "price": 1.50}]}
-{"id": 2, "name": "X-Burger", "ingredients":[{"id": 3, "name": "Hambúrguer de carne", "price": 3.00}, {"id": 5, "name": "Queijo", "price": 1.50}]}
-{"id": 3, "name": "X-Egg", "ingredients":[{"id": 3, "name": "Hambúrguer de carne", "price": 3.00}, {"id": 4, "name": "Ovo", "price": 0.80}, {"id": 5, "name": "Queijo", "price": 1.50}]}
-{"id": 4, "name": "X-Egg Bacon", "ingredients":[{"id": 2, "name": "Bacon", "price": 2.00}, {"id": 3, "name": "Hambúrguer de carne", "price": 3.00}, {"id": 4, "name": "Ovo", "price": 0.80}, {"id": 5, "name": "Queijo", "price": 1.50}]}
+{"id": 1, "name": "Bacon Cheeseburger", "ingredients":[{"id": 2, "name": "Bacon", "price": 2.00}, {"id": 3, "name": "Burger", "price": 3.00}, {"id": 5, "name": "Cheese", "price": 1.50}]}
+{"id": 2, "name": "Cheeseburger", "ingredients":[{"id": 3, "name": "Burger", "price": 3.00}, {"id": 5, "name": "Cheese", "price": 1.50}]}
+{"id": 3, "name": "Egg Cheeseburger", "ingredients":[{"id": 3, "name": "Burger", "price": 3.00}, {"id": 4, "name": "Egg", "price": 0.80}, {"id": 5, "name": "Cheese", "price": 1.50}]}
+{"id": 4, "name": "Egg Bacon Cheeseburger", "ingredients":[{"id": 2, "name": "Bacon", "price": 2.00}, {"id": 3, "name": "Burger", "price": 3.00}, {"id": 4, "name": "Egg", "price": 0.80}, {"id": 5, "name": "Cheese", "price": 1.50}]}
